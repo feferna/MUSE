@@ -1,0 +1,177 @@
+/* styles.css */
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input {
+    width: 94%;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /*button:hover {
+    background-color: #0056b3;
+  }*/
+
+  /*.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #A9A9A9;
+  }*/
+
+  .formContainer, .smallFormContainer {
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0px;
+  }
+  
+  .formContainer {
+    width: 80%;
+  }
+
+  .smallFormContainer {
+    width: 300px;
+  }
+
+  .inputRow {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .inputRow > button, .inputRow > button:hover {
+    padding: 0px;
+    margin: 5px;
+    background: transparent;
+  }
+
+  .toggleContainer {
+    margin: 10px;
+  }
+
+  .checkboxInput {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
+    margin: 0px;
+  }
+
+  .rangeInput {
+    flex: 3;
+  }
+
+  .inputLabel {
+    display: block;
+  }
+
+  .paramLabel {
+    display: block;
+    text-align: left;
+  }
+  
+  .radioOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
+  }
+
+  .radioOption > input {
+    width: 15px;
+    height: 15px;
+    margin: 0px;
+  }
+
+  .radioGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resultContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0;
+  }
+
+  .formView {
+    height: 82.7vh;
+    overflow-y: auto;
+    margin: 0px 0px 0px 10px;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex: 0 0 350px;
+    justify-content: center;
+  }
+
+  .resultView {
+    /*flex: 2 1 auto;*/
+    width: 100%;
+    height: 82.7vh;
+    overflow-y: auto;
+    margin: 0px 0px 0px 20px;
+    padding: 20px 20px 20px 10px;
+  }
+
+  .toggleButtonOpen, .toggleButtonClosed, .toggleButtonOpen:hover, .toggleButtonClosed:hover {
+    width: 15px;
+    height: 100%;
+    margin: 0px;
+    background: #ddd;
+    color: black;
+    border-radius: 0;
+  }
+
+  .toggleButtonOpen {
+    padding: 0px 15px 0px 5px;
+  }
+  
+  .toggleButtonClosed {
+    padding: 0px 20px 0px 0px;
+  }
+
+  
+  
+  
+  

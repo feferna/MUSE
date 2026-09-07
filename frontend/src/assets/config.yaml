@@ -1,0 +1,69 @@
+
+
+configuration:
+  study_name: SOMETHING
+  database_url: 'sqlite:///database.db'
+  # Database URL where optimization results are stored. Can be SQLite, MySQL, or PostgreSQL.
+
+agent_training_configuration:    
+  number_training_timesteps: 1_000
+  # Total number of training timesteps per iteration.
+  
+  eval_every_n_batches: 1
+  # Evaluate the agent every n batches of training# or PixelLunarLanderCustomReward.
+  
+  max_number_steps_per_episode: 1024
+  # Maximum number of steps per episode during training.
+  
+  number_environments_for_training: 1
+  # Number of parallel environments used for training.
+
+  training_batch_size: 256
+  # Batch size used during training. This setting impacts the memory usage during optimization.
+  
+  stable-baselines-algorithm: PPO
+  # Let's just keep a single option for now: PPO.
+  # So, you don't need to put it in as an option in the frontend right now.
+  # Algorithm used from Stable Baselines (e.g., PPO, SAC).
+  
+  stable-baselines-policy: CnnPolicy 
+  # There is just two options for this: CnnPolicy and MultiInputPolicy
+  # Policy architecture used by the Stable Baselines algorithm (e.g., CnnPolicy).
+    
+  random-seed: 123
+  # Random seed for reproducibility.
+
+  device: cuda
+  # Just one option: cuda
+  # So, you don't need to put it in as an option in the frontend right now.
+  # Device used to train the agent (cuda, cpu or mps)
+
+parallelization:
+  n_processes: 4 # Number of Parallel Evaluations
+  n_gpus: 1 # Number of GPUS
+
+parameter_optimization_config: 
+  # This section should have all optimization related parameter for PSO and OPTUNA
+  optimization_algorithm: bayesian_optimization
+  # Just one option for now.
+  # No need to put in the frontend right now.
+
+  single_objective_evaluation_function: max 
+  # Defines the strategy for evaluating the fitness of a solution on single-objective optimizations.
+  # Options:
+  # - max: Use the maximum reward obtained in the whole trial training session as the objective.
+  # - last: Use only the last reward of the training session as the objective.
+
+  optuna:
+    num_trials: 100
+    # Total number of trials for each parallel process
+
+    # The following parameters only works with Bayesian Optimization.
+    num_startup_trials: 50
+    # Number of trials using Random Sampling instead of TPE
+
+    num_ei_candidates: 80
+    # Number of candidate samples used to calculate the Expected Improvement.
+
+    multivariate: true
+    # Always true. No need to put in the frontend.

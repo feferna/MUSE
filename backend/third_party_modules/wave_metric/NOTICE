@@ -1,0 +1,6 @@
+This directory contains third-party code.
+
+Component: WAVE (Weighted Affective Valence Estimates) metric
+Origin: https://github.com/aalto-ui/aim
+License: MIT (see LICENSE)
+Local changes: packaging-only (single-file module); no algorithmic changes.

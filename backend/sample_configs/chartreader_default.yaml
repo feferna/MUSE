@@ -1,0 +1,75 @@
+configuration:
+  task_name: chart_reader
+  study_name: chartist_optimization
+  database_name: database_chartist
+  n_designs: 4
+  chart_task: theme_parks
+agent_training_configuration:
+  continue_from_existing_database: false
+  number_training_timesteps: 50000
+  max_number_steps_per_episode: 1024
+  number_environments_for_training: 20
+  training_batch_size: 256
+  stable_baselines_algorithm: PPO
+  stable_baselines_policy: MlpPolicy
+  random_seed: none
+  device: cuda
+parallellization:
+  n_processes: 4
+  n_gpus: 1
+parameter_optimization_config:
+  optuna:
+    num_startup_trials: 10
+    num_ei_candidates: 40
+    multivariate: true
+parameters_bounds:
+  bar_width:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 10
+    start: 1
+    stop: 20
+  aspect_ratio:
+    type: default
+    searchable: true
+    integer: false
+    user_preference: 1
+    start: 0.5
+    stop: 2
+  x_axis_font_size:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 15
+    start: 10
+    stop: 20
+  y_axis_font_size:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 15
+    start: 10
+    stop: 20
+  r_value:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 100
+    start: 100
+    stop: 255
+  g_value:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 100
+    start: 100
+    stop: 255
+  b_value:
+    type: default
+    searchable: true
+    integer: true
+    user_preference: 100
+    start: 100
+    stop: 255
+multi_surrogate_lambda: 1.0

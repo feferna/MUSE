@@ -1,0 +1,95 @@
+task_name: "chart_reader"
+study_name: "chartist_task"
+database_name: "chartist_db"
+n_designs: 4
+continue_from_existing_database: false
+number_training_timesteps: 50000
+eval_every_n_batches: 1
+max_number_steps_per_episode: 1024
+number_environments_for_training: 20
+training_batch_size: 256
+stable_baselines_algorithm: "PPO"
+stable_baselines_policy: "MlpPolicy"
+random_seed: none
+device: "cuda"
+n_processes: 12
+n_gpus: 1
+optimization_algorithm: "bayesian_optimization"
+single_objective_evaluation_function: "max"
+num_startup_trials: 10
+num_ei_candidates: 40
+multivariate: true
+multi_surrogate_lambda: 0.50
+y_min: 0.0
+y_max: 1.0
+added_parameters:
+  bar_width:
+    label: "Bar Width"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 10
+    user_preference_min: 1
+    user_preference_max: 20
+    start: 1
+    stop: 20
+  aspect_ratio:
+    label: "Aspect Ratio"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 1
+    user_preference_min: 0.5
+    user_preference_max: 2
+    start: 0.5
+    stop: 2
+  x_axis_font_size:
+    label: "Size of the x-axis font"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 15
+    user_preference_min: 10
+    user_preference_max: 20
+    start: 10
+    stop: 20
+  y_axis_font_size:
+    label: "Size of the y-axis font"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 15
+    user_preference_min: 10
+    user_preference_max: 20
+    start: 10
+    stop: 20
+  r_value:
+    label: "Color of the Red channel"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 100
+    user_preference_min: 0
+    user_preference_max: 255
+    start: 100
+    stop: 255
+  g_value:
+    label: "Color of the Green channel"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 100
+    user_preference_min: 0
+    user_preference_max: 255
+    start: 100
+    stop: 255
+  b_value:
+    label: "Color of the Blue channel"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 100
+    user_preference_min: 0
+    user_preference_max: 255
+    start: 100
+    stop: 255

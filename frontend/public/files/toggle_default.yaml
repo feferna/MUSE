@@ -1,0 +1,95 @@
+task_name: 'toggle_task'
+study_name: 'toggle_task'
+database_name: 'toggle_db'
+n_designs: 4
+continue_from_existing_database: false
+number_training_timesteps: 50000
+eval_every_n_batches: 1
+max_number_steps_per_episode: 1024
+number_environments_for_training: 20
+training_batch_size: 256
+stable_baselines_algorithm: 'PPO'
+stable_baselines_policy: 'MlpPolicy'
+random_seed: none
+device: 'cuda'
+n_processes: 12
+n_gpus: 1
+optimization_algorithm: 'bayesian_optimization'
+single_objective_evaluation_function: 'max'
+num_startup_trials: 10
+num_ei_candidates: 40
+multivariate: true
+multi_surrogate_lambda: 0.50
+y_min: 0.0
+y_max: 1.0
+added_parameters:
+  duration:
+    label: 'Animation Duration (ms)'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 300
+    user_preference_min: 100
+    user_preference_max: 1000
+    start: 100
+    stop: 1000
+  borderRadius:
+    label: 'Border Radius (px)'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 25
+    user_preference_min: 0
+    user_preference_max: 50
+    start: 0
+    stop: 50
+  thumbRatio:
+    label: 'Thumb Size Ratio'
+    type: 'default'
+    searchable: true
+    integer: false
+    user_preference: 0.8
+    user_preference_min: 0.3
+    user_preference_max: 0.95
+    start: 0.3
+    stop: 0.95
+  thumbShape:
+    label: 'Thumb Shape'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 0
+    user_preference_min: 0
+    user_preference_max: 7
+    start: 0
+    stop: 7
+  visualStyle:
+    label: 'Visual Style'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 0
+    user_preference_min: 0
+    user_preference_max: 4
+    start: 0
+    stop: 4
+  colorScheme:
+    label: 'Color Scheme'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 0
+    user_preference_min: 0
+    user_preference_max: 6
+    start: 0
+    stop: 6
+  easing:
+    label: 'Animation Easing'
+    type: 'default'
+    searchable: true
+    integer: true
+    user_preference: 1
+    user_preference_min: 0
+    user_preference_max: 4
+    start: 0
+    stop: 4

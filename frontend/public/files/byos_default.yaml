@@ -1,0 +1,85 @@
+task_name: "BYOS"
+study_name: "byos_task"
+database_name: "byos_db"
+n_designs: 4
+continue_from_existing_database: false
+number_training_timesteps: 100
+eval_every_n_batches: 1
+max_number_steps_per_episode: 512
+number_environments_for_training: 4
+training_batch_size: 512
+stable_baselines_algorithm: "PPO"
+stable_baselines_policy: "MlpPolicy"
+random_seed: none
+device: "cuda"
+n_processes: 12
+n_gpus: 1
+optimization_algorithm: "bayesian_optimization"
+single_objective_evaluation_function: "max"
+num_startup_trials: 10
+num_ei_candidates: 40
+multivariate: true
+multi_surrogate_lambda: 0.50
+y_min: -250.0
+y_max: 250.0
+training_parameters:
+  gae_lambda:
+    label: "Generalized advantage estimation"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 0.9
+    user_preference_min: 0.9
+    user_preference_max: 0.95
+    start: 0.9
+    stop: 0.95
+  gamma:
+    label: "Gamma"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 0.4
+    user_preference_min: 0.4
+    user_preference_max: 0.8
+    start: 0.4
+    stop: 0.8
+  learning_rate:
+    label: "Learning rate"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 0.00035
+    user_preference_min: 0.00035
+    user_preference_max: 0.0035
+    start: 0.00035
+    stop: 0.0035
+  n_epochs:
+    label: "Number of epochs"
+    type: "default"
+    searchable: true
+    integer: true
+    user_preference: 3
+    user_preference_min: 3
+    user_preference_max: 10
+    start: 3
+    stop: 10
+  ent_coef:
+    label: "Entropy coefficient"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 0.01
+    user_preference_min: 0.01
+    user_preference_max: 0.1
+    start: 0.01
+    stop: 0.1
+  clip_range:
+    label: "Clip range"
+    type: "default"
+    searchable: true
+    integer: false
+    user_preference: 0.01
+    user_preference_min: 0.01
+    user_preference_max: 0.3
+    start: 0.01
+    stop: 0.3
