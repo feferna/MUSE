@@ -13,22 +13,22 @@ The paper is published under a **Creative Commons Attribution 4.0 International 
 
 ## Authors
 
-- **Francisco Erivaldo Fernandes Junior** — Instituto Tecnológico de Aeronáutica, Brazil  
-  [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--2301--8820-green)](https://orcid.org/0000-0003-2301-8820)
+- **[Francisco Erivaldo Fernandes Junior](https://feferna.github.io/)** — Instituto Tecnológico de Aeronáutica, Brazil  
+  [![GitHub](https://img.shields.io/badge/GitHub-feferna-blue?logo=github)](https://github.com/feferna) [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--2301--8820-green)](https://orcid.org/0000-0003-2301-8820)
 
-- **Thomas Langerak** — Aalto University, Finland  
-  [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--2536--0208-green)](https://orcid.org/0000-0003-2536-0208)
+- **[Thomas Langerak](https://thomaslangerak.nl/)** — Aalto University, Finland  
+  [![GitHub](https://img.shields.io/badge/GitHub-tlangerak-blue?logo=github)](https://github.com/tlangerak) [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--2536--0208-green)](https://orcid.org/0000-0003-2536-0208)
 
-- **Mira Keränen** — Aalto University, Finland  
+- **[Mira Keränen](https://www.linkedin.com/in/mira-ker%C3%A4nen-71939b1a2/)** — Aalto University, Finland  
   [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--6234--2694-green)](https://orcid.org/0009-0008-6234-2694)
 
-- **Danqing Shi** — Lund University, Sweden  
-  [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8105--0944-green)](https://orcid.org/0000-0002-8105-0944)
+- **[Danqing Shi](https://sdq.github.io/)** — Lund University, Sweden  
+  [![GitHub](https://img.shields.io/badge/GitHub-sdq-blue?logo=github)](https://github.com/sdq) [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8105--0944-green)](https://orcid.org/0000-0002-8105-0944)
 
-- **Ardak Alipova** — Nazarbayev University, Kazakhstan  
-  [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--3653--9670-green)](https://orcid.org/0009-0004-3653-9670)
+- **[Ardak Alipova](https://www.linkedin.com/in/ardaq/)** — Nazarbayev University, Kazakhstan  
+  [![GitHub](https://img.shields.io/badge/GitHub-Default--bit-blue?logo=github)](https://github.com/Default-bit) [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--3653--9670-green)](https://orcid.org/0009-0004-3653-9670)
 
-- **Antti Oulasvirta** — Aalto University, Finland  
+- **[Antti Oulasvirta](https://users.aalto.fi/~oulasvir/)** — Aalto University, Finland  
   [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--2498--7837-green)](https://orcid.org/0000-0002-2498-7837)
 
 ---
